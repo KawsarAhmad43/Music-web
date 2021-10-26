@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/spiderman-listening-music-dv.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+}
+.navbar{
+    background: rgb(0,0,0,0.5);
+    width: 100%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 200px;
+    margin-left: 6%;
+    cursor: pointer;
+    font-size: 42px;
+    font-weight: bolder;
+    color: white;
+     text-shadow: 2px 2px black;
+    font-family: 'East Sea Dokdo', cursive;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bolder;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+     text-shadow: 2px 2px #ff0000;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navbar ul li a:hover{
+    background: rgb(0,0,0,0.1);
+    font-size: 18px;
+    transition: 0.8s;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 5px 3px 2px rgb(0,0,0,0.6);
+}
+.content{
+    
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    
+}
+.left-col{
+    margin-left: 6%;
+    flex: 2;
+}
+.left-col h1{
+    
+      font-size: 42px;
+    text-shadow: 3px 3px #ff0000;
+        font-family: 'Permanent Marker', cursive;
+    color: white;
+    }
+.right-col{
+    float: right;
+    margin-right: 6%;
+    padding: 60px;
+    flex: 1;
+    justify-content: center;
+    
+}
+.playbox{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.playbox:hover{
+    width: 100px;
+    margin: 0 auto;
+    box-shadow: 3px 5px 3px 2px rgb(0,0,0,0.6);
+    border-radius: 5px;
+    transition: 0.8s;
+}
+

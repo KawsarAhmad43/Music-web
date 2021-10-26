@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music web</title>
+    <link rel="shortcut icon" href="image/apple-music-logo-itunes-apps.jpg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Permanent+Marker&family=Sofia&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <div class="container">
+       
+       <div class="navbar">
+           <label for="logo" class="logo">🎧 Music Web</label>
+           <ul>
+               <li><a href="index.html">Home</a> </li>
+               <li><a href="playlist.html">Playlist</a></li>
+               <li><a href="">Genre</a></li>
+               <li><a href="">Album</a></li>
+               <li><a href="">Artist</a></li>
+           </ul>
+       </div>
+               <div class="content">
+                
+                  <div class="left-col">
+                     <h1>Listen <br> to <br> your <br> Heart </h1>
+                  </div>
+                 
+                  <div class="right-col">
+                     <div class="playbox">
+                         <center>
+                             <p>Click here </p>
+                         </center>
+                         <center>
+                            <img src="image/playb.png" alt="" style="width: 50px; height: 50px;" id="icon"> 
+                         </center>
+                     
+                     </div>
+                     
+                  </div>
+           
+           
+               </div>
+               
+               <audio id="mysong">
+                   <source src="audio/Billie_Eilish_-_Lovely_Ringtone(128k).mp3" type="audio/mp3">
+               </audio>
+               <script>
+                   var mysong=document.getElementById("mysong");
+                   var icon=document.getElementById("icon");
+                   icon.onclick=function(){
+                       if(mysong.paused){
+                           mysong.play();
+                           icon.src="image/p.png";
+                       }
+                       else{
+                           mysong.pause();
+                           icon.src="image/playb.png";
+                       }
+                   }
+                   
+               </script>
+   </div>
+    
+</body>
+</html>
